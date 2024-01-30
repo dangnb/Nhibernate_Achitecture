@@ -7,6 +7,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Entities\Identity\Company.hbm.xml" />
+    <None Remove="Entities\Identity\CompanyConfig.hbm.xml" />
+    <None Remove="Entities\Identity\Module.hbm.xml" />
+    <None Remove="Entities\Identity\Permission.hbm.xml" />
+    <None Remove="Entities\Identity\Role.hbm.xml" />
+    <None Remove="Entities\Identity\SystemConfig.hbm.xml" />
+    <None Remove="Entities\Identity\Userdata.hbm.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Entities\Identity\Company.hbm.xml" />
+    <EmbeddedResource Include="Entities\Identity\CompanyConfig.hbm.xml" />
+    <EmbeddedResource Include="Entities\Identity\Module.hbm.xml" />
+    <EmbeddedResource Include="Entities\Identity\Permission.hbm.xml" />
+    <EmbeddedResource Include="Entities\Identity\Role.hbm.xml" />
+    <EmbeddedResource Include="Entities\Identity\SystemConfig.hbm.xml" />
+    <EmbeddedResource Include="Entities\Identity\Userdata.hbm.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="NHibernate" Version="5.5.0" />
   </ItemGroup>
 

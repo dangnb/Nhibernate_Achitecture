@@ -1,6 +1,5 @@
 ﻿using QLTS.Application.Mapper;
 using Microsoft.Extensions.DependencyInjection;
-using AutoMapper;
 
 namespace QLTS.Application.DependencyInjection.Extensions;
 public static class ServiceCollectionExtensions
@@ -13,7 +12,7 @@ public static class ServiceCollectionExtensions
         //.AddTransient(typeof(IPipelineBehavior<,>), typeof(PerformancePipelineBehavior<,>))
         //.AddTransient(typeof(IPipelineBehavior<,>), typeof(TransactionPipelineBehavior<,>))
         //.AddTransient(typeof(IPipelineBehavior<,>), typeof(TracingPipelineBehavior<,>))
-        //.AddValidatorsFromAssembly(Contract.AssemblyReference.assembly, includeInternalTypes: true)
+        ///.AddValidatorsFromAssembly(Contract.AssemblyReference.assembly, includeInternalTypes: true)
         ;
 
     public static IServiceCollection AddConfigureAutoMapper(this IServiceCollection services)

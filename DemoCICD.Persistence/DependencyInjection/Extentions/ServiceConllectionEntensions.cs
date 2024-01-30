@@ -20,9 +20,6 @@ public static class ServiceConllectionEntensions
     {
         try
         {
-            // đăng ký middleware để quản lý scope
-           //app.UseMiddleware<WindsorScopeMiddleware>();
-
             // đăng ký middleware để authen và tạo fxcontext
             //app.UseMiddleware<FxJwtMiddleware>();
 

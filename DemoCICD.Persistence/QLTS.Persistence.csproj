@@ -9,11 +9,17 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    <PackageReference Include="NHibernate" Version="5.5.0" />
+    <PackageReference Include="NHibernate.Driver.MySqlConnector" Version="2.0.4" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\src\QLTS.Contract\QLTS.Contract.csproj" />
     <ProjectReference Include="..\src\QLTS.Domain\QLTS.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\Identity\" />
   </ItemGroup>
 
 </Project>

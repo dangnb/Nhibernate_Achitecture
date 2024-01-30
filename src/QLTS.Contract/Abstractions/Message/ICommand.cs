@@ -1,5 +1,5 @@
-﻿using DemoCICD.Common.Abstractions.Shared;
-using MediatR;
+﻿using MediatR;
+using QLTS.Contract.Abstractions.Shared;
 
 namespace QLTS.Contract.Abstractions.Message;
 public interface ICommand : IRequest<Result>

@@ -1,4 +1,4 @@
-﻿using DemoCICD.Common.Abstractions.Shared;
+﻿using QLTS.Contract.Abstractions.Shared;
 using MediatR;
 
 namespace QLTS.Contract.Abstractions.Message;

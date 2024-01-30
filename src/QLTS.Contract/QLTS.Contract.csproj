@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Castle.Windsor" Version="6.0.0" />
     <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="NHibernate" Version="5.5.0" />
   </ItemGroup>
 
 </Project>
