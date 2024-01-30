@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping   xmlns="urn:nhibernate-mapping-2.2">
+  <class name="QLTS.Domain.Entities.Identity.CompanyConfig, QLTS.Domain" table="CompanyConfig" lazy="true" >
+    <id name="ComID" column="ComID" type="int"/>
+    <property name="NhacHetHanHopDong" column="NhacHetHanHopDong" type="Decimal"/>
+    <property name="GioLamViecChuan" column="GioLamViecChuan" type="Decimal"/>
+    <property name="GioLamTu" column="GioLamTu" type="TimeSpan"/>
+    <property name="GioLamDen" column="GioLamDen" type="TimeSpan"/>
+    <property name="GioCongThang" column="GioCongThang" type="Decimal"/>
+    <property name="GioCongNam" column="GioCongNam" type="Decimal"/>
+    <property name="NgayCongThang" column="NgayCongThang" type="Decimal"/>
+    <property name="NgayNghiChuan" column="NgayNghiChuan" type="int"/>
+  </class>
+</hibernate-mapping>
