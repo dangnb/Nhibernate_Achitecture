@@ -49,6 +49,7 @@ var app = builder.Build();
 
 app.UseMiddleware<WindsorScopeMiddleware>();
 
+app.UseMiddleware<JwtMiddleware>();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 // Configure the HTTP request pipeline.
 //if (app.Environment.IsDevelopment())

@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using MediatR;
 using QLTS.Application.Behaviors;
 using FluentValidation;
-using QLTS.Application.DependencyInjection.Options;
+using QLTS.Application.UserCases.jwt;
 
 namespace QLTS.Application.DependencyInjection.Extensions;
 public static class ServiceCollectionExtensions
