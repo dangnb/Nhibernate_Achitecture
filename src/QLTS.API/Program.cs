@@ -3,9 +3,13 @@ using QLTS.API.Middleware;
 using QLTS.Persistence.DependencyInjection.Extentions;
 using Serilog;
 using QLTS.Application.DependencyInjection.Extensions;
+using NHibernate.Cfg;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSwaggerGen();
+// configure strongly typed settings object
+builder.Services.Configure<QLTS.Contract.AppSettings>(builder.Configuration.GetSection("AppSettings"));
+builder.Services.AddCustomJwtAuthentication(builder.Configuration);
 Log.Logger = new LoggerConfiguration().ReadFrom
     .Configuration(builder.Configuration)
     .CreateLogger();
