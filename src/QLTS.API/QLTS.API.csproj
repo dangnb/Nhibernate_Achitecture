@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\DemoCICD.Persistence\QLTS.Persistence.csproj" />
+    <ProjectReference Include="..\..\..\..\NET_DEFAULT\NHIBERNATE\QLTS\DemoCICD.Persistence\QLTS.Persistence.csproj" />
     <ProjectReference Include="..\QLTS.Application\QLTS.Application.csproj" />
     <ProjectReference Include="..\QLTS.Persentation\QLTS.Persentation.csproj" />
   </ItemGroup>
